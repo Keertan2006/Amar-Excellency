@@ -1,0 +1,525 @@
+/* ============================================================
+   AMAR EXCELLENCY — Responsive Styles
+   responsive.css — Breakpoints, mobile layouts, scaling
+   ============================================================ */
+
+/* ============================================================
+   BREAKPOINT: 1200px — Large Desktops
+   ============================================================ */
+@media (max-width: 1200px) {
+  .services__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .why-us__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer__grid {
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    gap: var(--space-2xl);
+  }
+
+  .experience-card {
+    flex: 0 0 280px;
+  }
+}
+
+
+/* ============================================================
+   BREAKPOINT: 992px — Tablets / Small Laptops
+   ============================================================ */
+@media (max-width: 992px) {
+  /* Navbar */
+  .navbar__menu {
+    display: none;
+  }
+
+  .navbar__cta {
+    display: none;
+  }
+
+  .navbar__hamburger {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 500px;
+  }
+
+  .hero__scroll {
+    display: none;
+  }
+
+  /* About */
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .about__image {
+    height: 400px;
+  }
+
+  .about__badge {
+    right: 20px;
+    bottom: -15px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .about__badge-number {
+    font-size: 2rem;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+  }
+
+  /* Services */
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Culinary */
+  .culinary__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Why Us */
+  .why-us__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Gallery */
+  .gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact */
+  .contact__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  /* Footer */
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+  }
+
+  /* Menu Page */
+  .menu__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* ============================================================
+   BREAKPOINT: 768px — Tablets Portrait
+   ============================================================ */
+@media (max-width: 768px) {
+  :root {
+    --navbar-height: 70px;
+    --space-section: clamp(3rem, 6vw, 5rem);
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 450px;
+  }
+
+  .hero__buttons {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .hero__buttons .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .hero__dots {
+    bottom: 24px;
+  }
+
+  /* Section Headers */
+  .section-header {
+    margin-bottom: var(--space-2xl);
+  }
+
+  /* Stats */
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+
+  /* Services */
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+
+  /* Experience Cards */
+  .experience-card {
+    flex: 0 0 250px;
+  }
+
+  .experience-card__image {
+    height: 300px;
+  }
+
+  /* Culinary */
+  .culinary__filters {
+    gap: var(--space-xs);
+  }
+
+  .culinary__filter {
+    padding: 8px 16px;
+    font-size: var(--fs-xs);
+  }
+
+  /* Why Us */
+  .why-us__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+
+  .why-us-card {
+    padding: var(--space-xl);
+  }
+
+  /* Testimonials */
+  .testimonial-card {
+    padding: var(--space-2xl) var(--space-lg);
+  }
+
+  .testimonial-card__text {
+    font-size: var(--fs-body);
+  }
+
+  /* Contact Form */
+  .contact-form {
+    padding: var(--space-2xl);
+  }
+
+  .contact-form__row {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: var(--space-md);
+    text-align: center;
+  }
+
+  /* Floating Buttons */
+  .floating-btn--whatsapp {
+    left: 16px;
+  }
+
+  .floating-btn--call {
+    right: 16px;
+  }
+
+  .floating-btn {
+    width: 44px;
+    height: 44px;
+    font-size: 1rem;
+  }
+
+  .floating-btn__tooltip {
+    display: none;
+  }
+
+  /* Back to Top */
+  .back-to-top {
+    right: 16px;
+    bottom: 24px;
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Page Hero */
+  .page-hero {
+    height: 300px;
+  }
+
+  /* Lightbox */
+  .lightbox__nav--prev { left: 10px; }
+  .lightbox__nav--next { right: 10px; }
+
+  .lightbox__nav {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+/* ============================================================
+   BREAKPOINT: 576px — Mobile Landscape / Large Phones
+   ============================================================ */
+@media (max-width: 576px) {
+  :root {
+    --navbar-height: 64px;
+  }
+
+  /* Navbar */
+  .navbar__logo img {
+    height: 40px;
+  }
+
+  .navbar.scrolled .navbar__logo img {
+    height: 36px;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 100vh;
+    min-height: 100svh;
+  }
+
+  .hero__title {
+    font-size: clamp(1.8rem, 6vw, 3rem);
+  }
+
+  .hero__subtitle {
+    font-size: var(--fs-small);
+  }
+
+  /* About */
+  .about__image {
+    height: 300px;
+  }
+
+  .about__badge {
+    width: 100px;
+    height: 100px;
+    bottom: -10px;
+    right: 10px;
+  }
+
+  .about__badge-number {
+    font-size: 1.6rem;
+  }
+
+  .about__badge-text {
+    font-size: 0.65rem;
+  }
+
+  /* Services */
+  .services__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card__image-wrapper {
+    height: 200px;
+  }
+
+  /* Experiences */
+  .experience-card {
+    flex: 0 0 220px;
+  }
+
+  .experience-card__image {
+    height: 260px;
+  }
+
+  /* Culinary */
+  .culinary__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .culinary-card__image {
+    height: 250px;
+  }
+
+  /* Why Us */
+  .why-us__grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Gallery */
+  .gallery__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery__filters {
+    gap: var(--space-xs);
+  }
+
+  .gallery__filter {
+    padding: 8px 14px;
+    font-size: var(--fs-xs);
+  }
+
+  /* Stats */
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+
+  .stat__number {
+    font-size: var(--fs-h3);
+  }
+
+  /* Consultation */
+  .consultation {
+    padding: var(--space-3xl) 0;
+  }
+
+  /* Menu Page */
+  .menu__grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Mobile Menu */
+  .mobile-menu__link {
+    font-size: var(--fs-h4);
+  }
+}
+
+
+/* ============================================================
+   BREAKPOINT: 480px — Small Phones
+   ============================================================ */
+@media (max-width: 480px) {
+  /* General */
+  .section-header {
+    margin-bottom: var(--space-xl);
+  }
+
+  .section-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+  }
+
+  /* Buttons */
+  .btn {
+    padding: 12px 24px;
+    font-size: var(--fs-xs);
+  }
+
+  .btn--lg {
+    padding: 14px 32px;
+    font-size: var(--fs-small);
+  }
+
+  /* Contact Form */
+  .contact-form {
+    padding: var(--space-xl);
+  }
+
+  .form-group__input,
+  .form-group__select,
+  .form-group__textarea {
+    padding: 10px 14px;
+  }
+
+  /* Footer */
+  .footer__newsletter-form {
+    flex-direction: column;
+  }
+
+  .footer__newsletter-btn {
+    width: 100%;
+  }
+
+  /* Lightbox */
+  .lightbox__image {
+    max-width: 95%;
+    max-height: 70vh;
+  }
+
+  .lightbox__close {
+    top: 12px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Page Hero */
+  .page-hero {
+    height: 250px;
+  }
+}
+
+
+/* ============================================================
+   HEIGHT-BASED QUERIES — Short screens
+   ============================================================ */
+@media (max-height: 600px) {
+  .hero {
+    min-height: 400px;
+  }
+
+  .hero__title {
+    font-size: clamp(1.6rem, 4vw, 2.5rem);
+  }
+
+  .hero__subtitle {
+    margin-bottom: var(--space-lg);
+  }
+}
+
+
+/* ============================================================
+   LANDSCAPE MOBILE
+   ============================================================ */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero {
+    min-height: 100vh;
+  }
+
+  .hero__content {
+    padding-top: var(--navbar-height);
+  }
+
+  .mobile-menu {
+    padding-top: var(--navbar-height);
+    overflow-y: auto;
+    gap: var(--space-md);
+  }
+
+  .mobile-menu__link {
+    font-size: var(--fs-body);
+  }
+}
+
+
+/* ============================================================
+   PRINT STYLES
+   ============================================================ */
+@media print {
+  .navbar,
+  .floating-btn,
+  .back-to-top,
+  .loader,
+  .hero__dots,
+  .hero__scroll,
+  .mobile-menu {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .hero {
+    height: auto;
+    min-height: auto;
+  }
+
+  .section {
+    page-break-inside: avoid;
+  }
+}

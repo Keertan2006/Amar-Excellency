@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Amar Excellency — Premium luxury catering and hospitality for weddings, corporate events, private celebrations, and destination weddings. Crafting extraordinary culinary experiences.">
+  <meta name="keywords"
+    content="luxury catering, wedding catering, corporate events, premium hospitality, Amar Excellency, bespoke culinary experiences">
+  <meta name="author" content="Amar Excellency">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Amar Excellency — Luxury Catering & Hospitality">
+  <meta property="og:description"
+    content="Crafting extraordinary culinary experiences for weddings, corporate events, and private celebrations.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo/AE_logo.png">
+
+  <title>Amar Excellency — Luxury Catering & Hospitality</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo/AE_logo.png">
+</head>
+
+<body>
+
+  <!-- ============================================================
+       LOADING SCREEN
+       ============================================================ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <img src="assets/logo/AE_logo.png" alt="Amar Excellency" class="loader__logo">
+    <div class="loader__spinner"></div>
+    <p class="loader__text">Crafting Excellence</p>
+  </div>
+
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="navbar__container">
+      <!-- Logo -->
+      <a href="index.html" class="navbar__logo" aria-label="Amar Excellency Home">
+        <img src="assets/logo/AE_logo.png" alt="Amar Excellency Logo" width="180" height="50">
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="#home" class="navbar__link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="navbar__link" data-section="about">About</a></li>
+        <li><a href="#services" class="navbar__link" data-section="services">Services</a></li>
+        <li><a href="#experiences" class="navbar__link" data-section="experiences">Experiences</a></li>
+        <li><a href="#menu" class="navbar__link" data-section="menu">Menu</a></li>
+        <li><a href="#gallery" class="navbar__link" data-section="gallery">Gallery</a></li>
+        <li><a href="#testimonials" class="navbar__link" data-section="testimonials">Testimonials</a></li>
+        <li><a href="#contact" class="navbar__link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <!-- CTA Button -->
+      <a href="#contact" class="navbar__cta">
+        Book Consultation
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14" />
+          <path d="m12 5 7 7-7 7" />
+        </svg>
+      </a>
+
+      <!-- Hamburger -->
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#home" class="mobile-menu__link" data-section="home">Home</a>
+    <a href="#about" class="mobile-menu__link" data-section="about">About</a>
+    <a href="#services" class="mobile-menu__link" data-section="services">Services</a>
+    <a href="#experiences" class="mobile-menu__link" data-section="experiences">Experiences</a>
+    <a href="#menu" class="mobile-menu__link" data-section="menu">Menu</a>
+    <a href="#gallery" class="mobile-menu__link" data-section="gallery">Gallery</a>
+    <a href="#testimonials" class="mobile-menu__link" data-section="testimonials">Testimonials</a>
+    <a href="#contact" class="mobile-menu__link" data-section="contact">Contact</a>
+    <a href="#contact" class="btn btn--primary">Book Consultation</a>
+  </div>
+
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section class="hero" id="home" aria-label="Hero">
+    <!-- Slider -->
+    <div class="hero__slider" id="heroSlider">
+      <div class="hero__slide active">
+        <img src="assets/images/hero/hero-1.png" alt="Luxury wedding banquet setup" class="hero__slide-img">
+      </div>
+      <div class="hero__slide">
+        <img src="assets/images/hero/hero-2.png" alt="Elegant corporate gala dinner" class="hero__slide-img">
+      </div>
+      <div class="hero__slide">
+        <img src="assets/images/hero/hero-3.png" alt="Destination wedding dining" class="hero__slide-img">
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="hero__overlay"></div>
+
+    <!-- Content -->
+    <div class="hero__content">
+      <span class="hero__label">Welcome to Amar Excellency</span>
+      <h1 class="hero__title">Crafting Extraordinary<br>Culinary Experiences</h1>
+      <p class="hero__subtitle">
+        Luxury Catering &bull; Weddings &bull; Corporate Events &bull; Private Celebrations &bull; Destination Weddings
+        &bull; Bespoke Culinary Experiences
+      </p>
+      <div class="hero__buttons">
+        <a href="menu.html" class="btn btn--primary btn--lg">
+          Explore Menus
+          <svg class="btn__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn--outline btn--lg">
+          Book Consultation
+        </a>
+      </div>
+    </div>
+
+    <!-- Slider Dots -->
+    <div class="hero__dots" id="heroDots">
+      <button class="hero__dot active" data-slide="0" aria-label="Slide 1"></button>
+      <button class="hero__dot" data-slide="1" aria-label="Slide 2"></button>
+      <button class="hero__dot" data-slide="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="hero__scroll" aria-hidden="true">
+      Scroll
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       ABOUT SECTION
+       ============================================================ -->
+  <section class="section about" id="about" aria-label="About Us">
+    <div class="container">
+      <div class="about__grid">
+        <!-- Image -->
+        <div class="about__image-wrapper reveal--left">
+          <img src="assets/images/about/about.png" alt="Amar Excellency Executive Chef" class="about__image lazy"
+            loading="lazy">
+          <div class="about__badge">
+            <span class="about__badge-number">10+</span>
+            <span class="about__badge-text">Years of<br>Excellence</span>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="about__content reveal--right">
+          <span class="section-label">Our Story</span>
+          <h2 class="section-title">A Legacy of Culinary Excellence</h2>
+          <p class="about__text">
+            At Amar Excellency, we believe that every event deserves an extraordinary culinary experience. With over a
+            decade of dedicated service, we have established ourselves as one of the most trusted names in luxury
+            catering and hospitality.
+          </p>
+          <p class="about__text">
+            Our team of world-class chefs and hospitality professionals craft bespoke menus that blend traditional
+            flavors with contemporary presentations, ensuring every occasion becomes an unforgettable celebration.
+          </p>
+          <p class="about__text">
+            From intimate private dinners to grand destination weddings, we bring the same commitment to excellence,
+            attention to detail, and passion for perfection to every event we serve.
+          </p>
+
+          <!-- Signature -->
+          <div class="about__signature">
+            <p class="about__signature-name">Amar Excellency</p>
+            <p class="about__signature-title">Taste The World Cuisine</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Statistics -->
+      <div class="stats reveal">
+        <div class="stat">
+          <div class="stat__number" data-target="500" data-suffix="+">0</div>
+          <div class="stat__label">Events Served</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number" data-target="50000" data-suffix="+">0</div>
+          <div class="stat__label">Guests Delighted</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number" data-target="100" data-suffix="+">0</div>
+          <div class="stat__label">Menu Selections</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number" data-target="10" data-suffix="+">0</div>
+          <div class="stat__label">Years of Excellence</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SERVICES SECTION
+       ============================================================ -->
+  <section class="section services" id="services" aria-label="Our Services">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header reveal">
+        <span class="section-label">What We Offer</span>
+        <h2 class="section-title">Our Catering Services</h2>
+        <p class="section-subtitle">From intimate gatherings to grand celebrations, we deliver bespoke culinary
+          experiences tailored to your vision.</p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="services__grid reveal-stagger">
+        <!-- Birthday Catering -->
+        <article class="service-card">
+          <div class="service-card__image-wrapper">
+            <img src="assets/images/services/birthday.png" alt="Birthday Catering" class="service-card__image lazy"
+              loading="lazy">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Birthday Catering</h3>
+            <p class="service-card__text">Celebrate birthdays with delightful cuisines and exceptional hospitality
+              tailored to every celebration.</p>
+            <a href="services.html" class="service-card__link">
+              View More
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Wedding Catering -->
+        <article class="service-card">
+          <div class="service-card__image-wrapper">
+            <img src="assets/images/services/wedding.png" alt="Wedding Catering" class="service-card__image lazy"
+              loading="lazy">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Wedding Catering</h3>
+            <p class="service-card__text">Luxury wedding catering with handcrafted menus, elegant presentation, and
+              personalized service.</p>
+            <a href="services.html" class="service-card__link">
+              View More
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Anniversary Catering -->
+        <article class="service-card">
+          <div class="service-card__image-wrapper">
+            <img src="assets/images/services/anniversary.png" alt="Anniversary Catering"
+              class="service-card__image lazy" loading="lazy">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Anniversary Catering</h3>
+            <p class="service-card__text">Create unforgettable anniversary celebrations with customized dining
+              experiences.</p>
+            <a href="services.html" class="service-card__link">
+              View More
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Corporate Catering -->
+        <article class="service-card">
+          <div class="service-card__image-wrapper">
+            <img src="assets/images/services/corporate.png" alt="Corporate Catering" class="service-card__image lazy"
+              loading="lazy">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Corporate Catering</h3>
+            <p class="service-card__text">Professional catering for conferences, seminars, meetings, product launches,
+              and corporate events.</p>
+            <a href="services.html" class="service-card__link">
+              View More
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Festival Catering -->
+        <article class="service-card">
+          <div class="service-card__image-wrapper">
+            <img src="assets/images/services/festival.png" alt="Festival Catering" class="service-card__image lazy"
+              loading="lazy">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Festival Catering</h3>
+            <p class="service-card__text">Traditional and festive cuisines crafted to enhance every cultural
+              celebration.</p>
+            <a href="services.html" class="service-card__link">
+              View More
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Small Parties -->
+        <article class="service-card">
+          <div class="service-card__image-wrapper">
+            <img src="assets/images/services/small-party.png" alt="Caterers for Small Parties"
+              class="service-card__image lazy" loading="lazy">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Caterers for Small Parties</h3>
+            <p class="service-card__text">Premium catering for intimate gatherings, family events, and private
+              celebrations.</p>
+            <a href="services.html" class="service-card__link">
+              View More
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Outdoor Catering -->
+        <article class="service-card">
+          <div class="service-card__image-wrapper">
+            <img src="assets/images/services/outdoor.png" alt="Outdoor Catering" class="service-card__image lazy"
+              loading="lazy">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Outdoor Catering</h3>
+            <p class="service-card__text">Luxury open-air catering for garden parties, beach weddings, destination
+              events, and outdoor celebrations.</p>
+            <a href="services.html" class="service-card__link">
+              View More
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Indoor Catering -->
+        <article class="service-card">
+          <div class="service-card__image-wrapper">
+            <img src="assets/images/services/indoor.png" alt="Indoor Catering" class="service-card__image lazy"
+              loading="lazy">
+          </div>
+          <div class="service-card__body">
+            <h3 class="service-card__title">Indoor Catering</h3>
+            <p class="service-card__text">Elegant indoor catering with seamless hospitality, premium presentation, and
+              world-class cuisine.</p>
+            <a href="services.html" class="service-card__link">
+              View More
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SIGNATURE EXPERIENCES
+       ============================================================ -->
+  <section class="section section--dark experiences" id="experiences" aria-label="Signature Experiences">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Curated For You</span>
+        <h2 class="section-title">Signature Experiences</h2>
+        <p class="section-subtitle">Discover our curated collection of extraordinary hospitality experiences, each
+          crafted to create lasting memories.</p>
+      </div>
+
+      <!-- Horizontal Scroll -->
+      <div class="experiences__scroll" id="experiencesScroll">
+        <article class="experience-card reveal">
+          <div class="experience-card__border"></div>
+          <img src="assets/images/experiences/royal-wedding.png" alt="Royal Wedding Catering"
+            class="experience-card__image lazy" loading="lazy">
+          <div class="experience-card__overlay"></div>
+          <div class="experience-card__content">
+            <h3 class="experience-card__title">Royal Wedding Catering</h3>
+            <p class="experience-card__subtitle">Grand celebrations with regal dining</p>
+          </div>
+        </article>
+
+        <article class="experience-card reveal">
+          <div class="experience-card__border"></div>
+          <img src="assets/images/experiences/corporate-gala.png" alt="Corporate Events"
+            class="experience-card__image lazy" loading="lazy">
+          <div class="experience-card__overlay"></div>
+          <div class="experience-card__content">
+            <h3 class="experience-card__title">Corporate Events</h3>
+            <p class="experience-card__subtitle">Professional elegance & fine dining</p>
+          </div>
+        </article>
+
+        <article class="experience-card reveal">
+          <div class="experience-card__border"></div>
+          <img src="assets/images/experiences/private-celebration.png" alt="Private Celebrations"
+            class="experience-card__image lazy" loading="lazy">
+          <div class="experience-card__overlay"></div>
+          <div class="experience-card__content">
+            <h3 class="experience-card__title">Private Celebrations</h3>
+            <p class="experience-card__subtitle">Intimate luxury experiences</p>
+          </div>
+        </article>
+
+        <article class="experience-card reveal">
+          <div class="experience-card__border"></div>
+          <img src="assets/images/experiences/destination-wedding.png" alt="Destination Weddings"
+            class="experience-card__image lazy" loading="lazy">
+          <div class="experience-card__overlay"></div>
+          <div class="experience-card__content">
+            <h3 class="experience-card__title">Destination Weddings</h3>
+            <p class="experience-card__subtitle">Exotic locations, exquisite dining</p>
+          </div>
+        </article>
+
+        <article class="experience-card reveal">
+          <div class="experience-card__border"></div>
+          <img src="assets/images/experiences/luxury-buffet.png" alt="Luxury Buffets"
+            class="experience-card__image lazy" loading="lazy">
+          <div class="experience-card__overlay"></div>
+          <div class="experience-card__content">
+            <h3 class="experience-card__title">Luxury Buffets</h3>
+            <p class="experience-card__subtitle">Opulent spreads, unlimited choices</p>
+          </div>
+        </article>
+
+        <article class="experience-card reveal">
+          <div class="experience-card__border"></div>
+          <img src="assets/images/experiences/live-counter.png" alt="Live Counters" class="experience-card__image lazy"
+            loading="lazy">
+          <div class="experience-card__overlay"></div>
+          <div class="experience-card__content">
+            <h3 class="experience-card__title">Live Counters</h3>
+            <p class="experience-card__subtitle">Interactive culinary theatre</p>
+          </div>
+        </article>
+
+        <article class="experience-card reveal">
+          <div class="experience-card__border"></div>
+          <img src="assets/images/experiences/dessert-studio.png" alt="Dessert Studio"
+            class="experience-card__image lazy" loading="lazy">
+          <div class="experience-card__overlay"></div>
+          <div class="experience-card__content">
+            <h3 class="experience-card__title">Dessert Studio</h3>
+            <p class="experience-card__subtitle">Artisanal sweets & confections</p>
+          </div>
+        </article>
+
+        <article class="experience-card reveal">
+          <div class="experience-card__border"></div>
+          <img src="assets/images/experiences/international-cuisine.png" alt="International Cuisine"
+            class="experience-card__image lazy" loading="lazy">
+          <div class="experience-card__overlay"></div>
+          <div class="experience-card__content">
+            <h3 class="experience-card__title">International Cuisine</h3>
+            <p class="experience-card__subtitle">Global flavors, local craftsmanship</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CULINARY SHOWCASE
+       ============================================================ -->
+  <section class="section culinary" id="menu" aria-label="Culinary Showcase">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Cuisine</span>
+        <h2 class="section-title">Culinary Showcase</h2>
+        <p class="section-subtitle">A curated collection of our finest culinary creations, crafted by award-winning
+          chefs.</p>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="culinary__filters reveal" role="tablist" aria-label="Menu Categories">
+        <button class="culinary__filter active" data-category="all" role="tab" aria-selected="true">All</button>
+        <button class="culinary__filter" data-category="indian" role="tab" aria-selected="false">Indian Cuisine</button>
+        <button class="culinary__filter" data-category="international" role="tab"
+          aria-selected="false">International</button>
+        <button class="culinary__filter" data-category="desserts" role="tab" aria-selected="false">Desserts</button>
+        <button class="culinary__filter" data-category="appetizers" role="tab" aria-selected="false">Appetizers</button>
+        <button class="culinary__filter" data-category="beverages" role="tab" aria-selected="false">Beverages</button>
+        <button class="culinary__filter" data-category="live" role="tab" aria-selected="false">Live Stations</button>
+      </div>
+
+      <!-- Culinary Grid -->
+      <div class="culinary__grid reveal-stagger" id="culinaryGrid">
+        <article class="culinary-card" data-category="indian">
+          <img src="assets/images/culinary/indian-cuisine.png" alt="Indian Cuisine" class="culinary-card__image lazy"
+            loading="lazy">
+          <div class="culinary-card__overlay"></div>
+          <div class="culinary-card__content">
+            <h3 class="culinary-card__title">Royal Indian Thali</h3>
+            <p class="culinary-card__desc">A grand spread of authentic Indian flavors — biryanis, curries, and
+              traditional delicacies.</p>
+          </div>
+        </article>
+
+        <article class="culinary-card" data-category="international">
+          <img src="assets/images/culinary/international.png" alt="International Cuisine"
+            class="culinary-card__image lazy" loading="lazy">
+          <div class="culinary-card__overlay"></div>
+          <div class="culinary-card__content">
+            <h3 class="culinary-card__title">Continental Elegance</h3>
+            <p class="culinary-card__desc">World-class international dishes with exquisite presentation and refined
+              flavors.</p>
+          </div>
+        </article>
+
+        <article class="culinary-card" data-category="desserts">
+          <img src="assets/images/culinary/desserts.png" alt="Premium Desserts" class="culinary-card__image lazy"
+            loading="lazy">
+          <div class="culinary-card__overlay"></div>
+          <div class="culinary-card__content">
+            <h3 class="culinary-card__title">Artisanal Desserts</h3>
+            <p class="culinary-card__desc">Handcrafted desserts, pastries, and confections that are pure works of art.
+            </p>
+          </div>
+        </article>
+
+        <article class="culinary-card" data-category="appetizers">
+          <img src="assets/images/culinary/appetizers.png" alt="Gourmet Appetizers" class="culinary-card__image lazy"
+            loading="lazy">
+          <div class="culinary-card__overlay"></div>
+          <div class="culinary-card__content">
+            <h3 class="culinary-card__title">Gourmet Appetizers</h3>
+            <p class="culinary-card__desc">Stunning starters that set the tone for an extraordinary dining experience.
+            </p>
+          </div>
+        </article>
+
+        <article class="culinary-card" data-category="beverages">
+          <img src="assets/images/culinary/beverages.png" alt="Premium Beverages" class="culinary-card__image lazy"
+            loading="lazy">
+          <div class="culinary-card__overlay"></div>
+          <div class="culinary-card__content">
+            <h3 class="culinary-card__title">Premium Beverages</h3>
+            <p class="culinary-card__desc">Curated mocktails, fresh juices, and signature drinks for every occasion.</p>
+          </div>
+        </article>
+
+        <article class="culinary-card" data-category="live">
+          <img src="assets/images/culinary/live-stations.png" alt="Live Cooking Stations"
+            class="culinary-card__image lazy" loading="lazy">
+          <div class="culinary-card__overlay"></div>
+          <div class="culinary-card__content">
+            <h3 class="culinary-card__title">Live Cooking Stations</h3>
+            <p class="culinary-card__desc">Interactive culinary theatre with chefs preparing dishes right before your
+              eyes.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       WHY CHOOSE US
+       ============================================================ -->
+  <section class="section section--surface why-us" id="why-us" aria-label="Why Choose Us">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Promise</span>
+        <h2 class="section-title">Why Choose Amar Excellency</h2>
+        <p class="section-subtitle">Excellence is not just what we do — it's who we are.</p>
+      </div>
+
+      <div class="why-us__grid reveal-stagger">
+        <div class="why-us-card">
+          <div class="why-us-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              <path d="M2 17l10 5 10-5" />
+              <path d="M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <h3 class="why-us-card__title">Premium Ingredients</h3>
+          <p class="why-us-card__text">Only the finest, freshest ingredients sourced from trusted suppliers worldwide.
+          </p>
+        </div>
+
+        <div class="why-us-card">
+          <div class="why-us-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
+              <polyline points="10 9 9 9 8 9" />
+            </svg>
+          </div>
+          <h3 class="why-us-card__title">Customized Menus</h3>
+          <p class="why-us-card__text">Tailor-made menus designed to reflect your vision, dietary needs, and
+            preferences.</p>
+        </div>
+
+        <div class="why-us-card">
+          <div class="why-us-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <h3 class="why-us-card__title">Experienced Team</h3>
+          <p class="why-us-card__text">Our culinary team brings decades of combined expertise to every event.</p>
+        </div>
+
+        <div class="why-us-card">
+          <div class="why-us-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
+          <h3 class="why-us-card__title">Elegant Presentation</h3>
+          <p class="why-us-card__text">Every dish is a masterpiece — plated with artistry and served with
+            sophistication.</p>
+        </div>
+
+        <div class="why-us-card">
+          <div class="why-us-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <h3 class="why-us-card__title">On-Time Execution</h3>
+          <p class="why-us-card__text">Precision-timed service ensuring seamless flow from start to finish.</p>
+        </div>
+
+        <div class="why-us-card">
+          <div class="why-us-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="1" y="3" width="22" height="18" rx="2" />
+              <line x1="1" y1="9" x2="23" y2="9" />
+              <line x1="1" y1="15" x2="23" y2="15" />
+              <line x1="8" y1="3" x2="8" y2="21" />
+              <line x1="16" y1="3" x2="16" y2="21" />
+            </svg>
+          </div>
+          <h3 class="why-us-card__title">Large Scale Expertise</h3>
+          <p class="why-us-card__text">From 50 to 50,000 guests — we scale seamlessly without compromising quality.</p>
+        </div>
+
+        <div class="why-us-card">
+          <div class="why-us-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+          </div>
+          <h3 class="why-us-card__title">Live Culinary Experiences</h3>
+          <p class="why-us-card__text">Interactive cooking stations that transform dining into theatrical entertainment.
+          </p>
+        </div>
+
+        <div class="why-us-card">
+          <div class="why-us-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+            </svg>
+          </div>
+          <h3 class="why-us-card__title">Professional Hospitality</h3>
+          <p class="why-us-card__text">Warm, attentive service that makes every guest feel like royalty.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       GALLERY SECTION
+       ============================================================ -->
+  <section class="section gallery" id="gallery" aria-label="Gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Portfolio</span>
+        <h2 class="section-title">Luxury Gallery</h2>
+        <p class="section-subtitle">A visual journey through our most memorable events and culinary masterpieces.</p>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery__grid reveal-stagger" id="galleryGrid">
+        <div class="gallery__item" data-category="weddings" data-index="0">
+          <img src="assets/images/gallery/gallery-1.png" alt="Luxury wedding banquet" class="lazy" loading="lazy">
+          <div class="gallery__item-overlay">
+            <div class="gallery__item-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery__item" data-category="corporate" data-index="1">
+          <img src="assets/images/gallery/gallery-2.png" alt="Corporate gala event" class="lazy" loading="lazy">
+          <div class="gallery__item-overlay">
+            <div class="gallery__item-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery__item" data-category="destination" data-index="2">
+          <img src="assets/images/gallery/gallery-3.png" alt="Destination wedding setup" class="lazy" loading="lazy">
+          <div class="gallery__item-overlay">
+            <div class="gallery__item-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery__item" data-category="weddings" data-index="3">
+          <img src="assets/images/gallery/gallery-4.png" alt="Royal Indian wedding feast" class="lazy" loading="lazy">
+          <div class="gallery__item-overlay">
+            <div class="gallery__item-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery__item" data-category="cuisine" data-index="4">
+          <img src="assets/images/gallery/gallery-5.png" alt="Luxury buffet display" class="lazy" loading="lazy">
+          <div class="gallery__item-overlay">
+            <div class="gallery__item-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery__item" data-category="weddings" data-index="5">
+          <img src="assets/images/gallery/gallery-6.png" alt="Grand wedding catering" class="lazy" loading="lazy">
+          <div class="gallery__item-overlay">
+            <div class="gallery__item-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image Lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous Image">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6" />
+      </svg>
+    </button>
+    <img class="lightbox__image" id="lightboxImage" src="" alt="Gallery Image">
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next Image">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6" />
+      </svg>
+    </button>
+    <div class="lightbox__counter" id="lightboxCounter"></div>
+  </div>
+
+
+  <!-- ============================================================
+       TESTIMONIALS
+       ============================================================ -->
+  <section class="section section--surface testimonials" id="testimonials" aria-label="Testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Client Stories</span>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p class="section-subtitle">Hear from the families and organizations we've had the privilege of serving.</p>
+      </div>
+
+      <div class="testimonials__wrapper reveal">
+        <div class="testimonials__slider" id="testimonialSlider">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+              <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+            </div>
+            <blockquote class="testimonial-card__text">
+              "Amar Excellency transformed our wedding into an absolutely magical experience. The food was
+              extraordinary, the presentation was impeccable, and every guest was left speechless. Truly world-class
+              hospitality."
+            </blockquote>
+            <p class="testimonial-card__name">Priya & Arjun Mehta</p>
+            <p class="testimonial-card__role">Wedding — Mumbai, 2024</p>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+              <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+            </div>
+            <blockquote class="testimonial-card__text">
+              "We've worked with many caterers for our corporate events, but Amar Excellency stands in a league of their
+              own. Their professionalism, attention to detail, and exceptional cuisine make them our trusted partner for
+              every event."
+            </blockquote>
+            <p class="testimonial-card__name">Rajesh Sharma</p>
+            <p class="testimonial-card__role">Corporate Director — Annual Gala, 2024</p>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+              <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+            </div>
+            <blockquote class="testimonial-card__text">
+              "From the initial consultation to the final dessert, every moment was handled with grace and perfection.
+              Our 25th anniversary celebration was nothing short of a five-star experience. Thank you, Amar Excellency!"
+            </blockquote>
+            <p class="testimonial-card__name">Sneha & Vikram Patel</p>
+            <p class="testimonial-card__role">Anniversary Celebration — Pune, 2024</p>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="testimonials__controls">
+          <button class="testimonials__btn" id="testimonialPrev" aria-label="Previous Testimonial">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+          </button>
+          <button class="testimonials__btn" id="testimonialNext" aria-label="Next Testimonial">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONSULTATION BANNER
+       ============================================================ -->
+  <section class="consultation" id="consultation" aria-label="Consultation CTA">
+    <div class="container">
+      <div class="consultation__content reveal">
+        <h2 class="consultation__title">Let's Plan Your Next Celebration</h2>
+        <p class="consultation__text">Every great event begins with a conversation. Let our experts craft a bespoke
+          culinary experience tailored just for you.</p>
+        <a href="#contact" class="btn btn--gold btn--lg">
+          Request Consultation
+          <svg class="btn__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT SECTION
+       ============================================================ -->
+  <section class="section contact" id="contact" aria-label="Contact Us">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-subtitle">Ready to create something extraordinary? We'd love to hear from you.</p>
+      </div>
+
+      <div class="contact__grid">
+        <!-- Contact Info -->
+        <div class="contact__info reveal--left">
+          <h3 class="contact__info-title">Let's Create Something Beautiful</h3>
+          <p class="contact__info-text">Whether you're planning a grand wedding, an intimate dinner, or a corporate
+            gala, our team is ready to bring your vision to life.</p>
+
+          <div class="contact__info-items">
+            <div class="contact__info-item">
+              <div class="contact__info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact__info-label">Our Office</p>
+                <p class="contact__info-value">Amar Excellency,<br>Mangalore, Karnataka, India</p>
+              </div>
+            </div>
+
+            <div class="contact__info-item">
+              <div class="contact__info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact__info-label">Phone</p>
+                <p class="contact__info-value">+91 XXXXX XXXXX</p>
+              </div>
+            </div>
+
+            <div class="contact__info-item">
+              <div class="contact__info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact__info-label">Email</p>
+                <p class="contact__info-value">info@amarexcellency.com</p>
+              </div>
+            </div>
+
+            <div class="contact__info-item">
+              <div class="contact__info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact__info-label">Working Hours</p>
+                <p class="contact__info-value">Mon — Sat: 9:00 AM — 8:00 PM<br>Sunday: By Appointment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form reveal--right" id="contactFormWrapper">
+          <h3 class="contact-form__title">Send Us a Message</h3>
+          <form id="contactForm" novalidate>
+            <div class="contact-form__row">
+              <div class="form-group">
+                <label class="form-group__label" for="name">Full Name *</label>
+                <input type="text" id="name" name="name" class="form-group__input" placeholder="Your full name" required
+                  aria-required="true">
+                <span class="form-group__error" id="nameError">Please enter your name</span>
+              </div>
+              <div class="form-group">
+                <label class="form-group__label" for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" class="form-group__input" placeholder="+91 XXXXX XXXXX"
+                  required aria-required="true">
+                <span class="form-group__error" id="phoneError">Please enter a valid phone number</span>
+              </div>
+            </div>
+
+            <div class="contact-form__row">
+              <div class="form-group">
+                <label class="form-group__label" for="email">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-group__input" placeholder="your@email.com"
+                  required aria-required="true">
+                <span class="form-group__error" id="emailError">Please enter a valid email</span>
+              </div>
+              <div class="form-group">
+                <label class="form-group__label" for="eventType">Event Type *</label>
+                <select id="eventType" name="eventType" class="form-group__select" required aria-required="true">
+                  <option value="">Select event type</option>
+                  <option value="wedding">Wedding</option>
+                  <option value="corporate">Corporate Event</option>
+                  <option value="birthday">Birthday</option>
+                  <option value="anniversary">Anniversary</option>
+                  <option value="festival">Festival</option>
+                  <option value="private">Private Party</option>
+                  <option value="outdoor">Outdoor Event</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="form-group__error" id="eventTypeError">Please select an event type</span>
+              </div>
+            </div>
+
+            <div class="contact-form__row">
+              <div class="form-group">
+                <label class="form-group__label" for="guests">Guest Count *</label>
+                <input type="number" id="guests" name="guests" class="form-group__input"
+                  placeholder="Estimated number of guests" min="1" required aria-required="true">
+                <span class="form-group__error" id="guestsError">Please enter guest count</span>
+              </div>
+              <div class="form-group">
+                <label class="form-group__label" for="date">Event Date *</label>
+                <input type="date" id="date" name="date" class="form-group__input" required aria-required="true">
+                <span class="form-group__error" id="dateError">Please select a future date</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-group__label" for="message">Your Message</label>
+              <textarea id="message" name="message" class="form-group__textarea"
+                placeholder="Tell us about your event vision..." rows="5"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">
+              Send Message
+              <svg class="btn__arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </button>
+          </form>
+
+          <!-- Success Message -->
+          <div class="form-success" id="formSuccess">
+            <div class="form-success__icon">&#10003;</div>
+            <h3 class="form-success__title">Message Sent Successfully!</h3>
+            <p class="form-success__text">Thank you for reaching out. Our team will get back to you within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Brand Column -->
+        <div class="footer__brand">
+          <img src="assets/logo/AE_logo.png" alt="Amar Excellency" class="footer__brand-logo">
+          <p class="footer__brand-text">
+            Crafting extraordinary culinary experiences for weddings, corporate events, and private celebrations. Where
+            every dish tells a story and every event becomes a memory.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z" />
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="white" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer__title">Quick Links</h4>
+          <nav class="footer__links" aria-label="Footer Quick Links">
+            <a href="#home" class="footer__link">Home</a>
+            <a href="#about" class="footer__link">About Us</a>
+            <a href="#services" class="footer__link">Services</a>
+            <a href="#experiences" class="footer__link">Experiences</a>
+            <a href="#gallery" class="footer__link">Gallery</a>
+            <a href="#contact" class="footer__link">Contact</a>
+          </nav>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4 class="footer__title">Services</h4>
+          <nav class="footer__links" aria-label="Footer Services">
+            <a href="services.html" class="footer__link">Wedding Catering</a>
+            <a href="services.html" class="footer__link">Corporate Events</a>
+            <a href="services.html" class="footer__link">Birthday Parties</a>
+            <a href="services.html" class="footer__link">Outdoor Catering</a>
+            <a href="services.html" class="footer__link">Festival Catering</a>
+            <a href="services.html" class="footer__link">Private Celebrations</a>
+          </nav>
+        </div>
+
+        <!-- Newsletter -->
+        <div>
+          <h4 class="footer__title">Newsletter</h4>
+          <p class="footer__newsletter-text">Subscribe to receive updates on our latest events, menus, and exclusive
+            offers.</p>
+          <form class="footer__newsletter-form" id="newsletterForm">
+            <input type="email" class="footer__newsletter-input" placeholder="Enter your email"
+              aria-label="Newsletter Email" required>
+            <button type="submit" class="footer__newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer__bottom">
+        <p>&copy; 2024 Amar Excellency. All Rights Reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__bottom-link">Privacy Policy</a>
+          <a href="#" class="footer__bottom-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- WhatsApp — bottom left -->
+  <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer"
+    class="floating-btn floating-btn--whatsapp" id="floatingWhatsApp" aria-label="Chat on WhatsApp">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+    <span class="floating-btn__tooltip">WhatsApp</span>
+  </a>
+
+  <!-- Call — bottom right -->
+  <a href="tel:+91XXXXXXXXXX" class="floating-btn floating-btn--call" id="floatingCall" aria-label="Call Us">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path
+        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+    </svg>
+    <span class="floating-btn__tooltip">Call Us</span>
+  </a>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+
+  <!-- ============================================================
+       JAVASCRIPT
+       ============================================================ -->
+  <script src="js/main.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/form.js"></script>
+</body>
+
+</html>
